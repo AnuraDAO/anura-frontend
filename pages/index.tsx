@@ -45,8 +45,8 @@ const Home: NextPage = () => {
           <Disclosure as="nav" className="bg-[#061d1e] bg-opacity-60">
             {({ open }) => (
               <>
-                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-                  <div className="flex items-center justify-between h-16">
+                <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="flex items-center justify-between h-[58px]">
                     <div className="flex w-full justify-between items-center">
                       <div className="flex-shrink-0">
                         <img
@@ -59,12 +59,12 @@ const Home: NextPage = () => {
                         <div className="flex space-x-4">
                           {items.map((item, index) => (
                             <Link key={index} href={item.href}>
-                              <a className="px-3 py-2 rounded-md text-[16px] text-[#dce1dd] font-semibold">
+                              <a className="px-3 py-2 rounded-md text-[13px] text-[#dce1dd] font-semibold">
                                 {item.title}
                               </a>
                             </Link>
                           ))}
-                          <div className="px-3 py-2 flex justify-center items-center space-x-3 rounded-md text-[16px] text-[#dce1dd] font-semibold bg-[#041716]">
+                          <div className="px-3 py-2 flex justify-center items-center space-x-3 rounded-md text-[13px] text-[#dce1dd] font-semibold bg-[#041716]">
                             <img
                               className="w-[18px] h-[18px]"
                               src="/avax-logo.png"
@@ -72,10 +72,10 @@ const Home: NextPage = () => {
                             <div>Avalanche</div>
                           </div>
                           <div className="flex justify-center items-center">
-                            <div className="px-3 py-2 flex justify-center items-center space-x-3 rounded-l-md text-[16px] text-[#dce1dd] bg-[#041716]">
+                            <div className="px-3 py-2 flex justify-center items-center space-x-3 rounded-l-md text-[13px] text-[#dce1dd] bg-[#041716]">
                               <div>25.6 AVAX</div>
                             </div>
-                            <div className="px-3 py-2 flex justify-center items-center space-x-3 rounded-md text-[16px] text-white bg-gradient-to-r from-[#D48B47] to-[#6340B7]">
+                            <div className="px-3 py-2 flex justify-center items-center space-x-3 rounded-md text-[13px] text-white bg-gradient-to-r from-[#D48B47] to-[#6340B7]">
                               0x2B30...70B
                             </div>
                           </div>
@@ -132,10 +132,101 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="">iawe</div>
+        <div className="my-[180px] px-[100px] mx-auto max-w-[1600px] space-y-[177px]">
+          <div className="flex justify-center gap-[144px]">
+            <div className="w-[45%] h-fit flex justify-end gap-[31px]">
+              <img src="./treasury.png" alt="treasury" />
+              <img src="./ribt.png" alt="ribt" />
+            </div>
+            <div className="w-[45%] space-y-[36px]">
+              <div className="text-[50px] text-[#E1A166]">The Frog Vision</div>
+              <div className="text-[18px]">
+                We are focused on providing utility and opportunities for stable
+                and consistent yield return for those who participate in our
+                protocol. We are primed for rapid development and long-term
+                protocol growth.
+              </div>
+              <div className="py-3 px-16 text-[16px] text-[#E1A166] font-semibold rounded-[8px] bg-gradient-to-r from-[#0D3B35] to-[#14521E] w-fit">
+                Read more
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center gap-[144px]">
+            <div className="pr-[40px] w-[45%] space-y-[36px]">
+              <div className="text-[50px] text-[#E1A166]">How Anura works</div>
+              <div className="text-[18px]">
+                Anura has a transparent development process and anyone can build
+                their ideas here. Every community member has the ability to
+                obtain an equal share of governance and vote on official
+                proposals to grow our ecosystem.
+              </div>
+              <div className="py-3 px-16 text-[16px] text-[#E1A166] font-semibold rounded-[8px] bg-gradient-to-r from-[#0D3B35] to-[#14521E] w-fit">
+                Read more
+              </div>
+            </div>
+            <div className="w-[45%] h-fit flex gap-[31px]">
+              <img src="./garden.png" alt="garden" />
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <div className="text-[50px] text-[#E1A166]">How to get started</div>
+            <div className="mt-[170px] grid grid-cols-1 gap-[55px] lg:grid-cols-3">
+              <div className="pb-[70px] h-[450px] w-[350px] bg-buyRibt bg-no-repeat object-cover bg-center flex justify-center items-end">
+                <a className="py-3 px-16 rounded-[8px] bg-gradient-to-r from-[#0D3B35] to-[#14521E] cursor-pointer font-semibold">
+                  BUY
+                </a>
+              </div>
+              <div className="pb-[70px] h-[450px] bg-mintNFT bg-no-repeat object-cover bg-center flex justify-center items-end">
+                <a className="py-3 px-16 rounded-[8px] bg-gradient-to-r from-[#0D3B35] to-[#14521E] cursor-pointer font-semibold">
+                  MINT
+                </a>
+              </div>
+              <div className="pb-[70px] h-[450px] bg-buyRibt bg-no-repeat object-cover bg-center flex justify-center items-end">
+                <a className="py-3 px-16 rounded-[8px] bg-gradient-to-r from-[#0D3B35] to-[#14521E] cursor-pointer font-semibold">
+                  EARN
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center items-center gap-[144px]">
+            <div className="w-[45%] h-fit flex justify-end gap-[31px]">
+              <img src="./garden.png" alt="garden" />
+            </div>
+            <div className="w-[45%] space-y-[36px]">
+              <div className="text-[50px] text-[#E1A166]">FAQ</div>
+              <div className="text-[18px]">
+                Anura has a transparent development process and anyone can build
+                their ideas here. Every community member has the ability to
+                obtain an equal share of governance and vote on official
+                proposals to grow our ecosystem.
+              </div>
+              <div className="py-3 px-16 text-[16px] text-[#E1A166] font-semibold rounded-[8px] bg-gradient-to-r from-[#0D3B35] to-[#14521E] w-fit">
+                Read more
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
-      <footer></footer>
+      <footer>
+        <div className="mx-auto flex justify-between">
+          <div className="ml-[200px] mb-[60px] flex items-end gap-[26px]">
+            <div>awe</div>
+            <div>awe</div>
+            <div>awe</div>
+          </div>
+          <div className="flex items-end">
+            <div className="mb-[60px]">Copyright</div>
+            <img
+              className="h-[250px]"
+              src="./bottom-leaf.png"
+              alt="bottom leaf"
+            />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
